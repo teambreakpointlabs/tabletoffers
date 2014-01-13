@@ -1,0 +1,19 @@
+<div class="offer_holder">
+  <div class="offer_tagline">
+    <%= tablet_offer.brand %> <%= tablet_offer.screen_size %>" <%= tablet_offer.screen_type %>
+  </div>
+  <div class="offer_img_holder">
+    <img src="<%= tablet_offer.img_url %>" class="offer_img"/>
+  </div>
+  <div class="offer_info">
+    <div class="original_price"><del> <span style="font-size:16px">Was</span> £<%= tablet_offer.original_price %></del></div>
+    <div class="offer_price"> £<%= tablet_offer.offer_price %></div>
+    <div class="pct_savings"> <%= tablet_offer.pct_savings %>% Off!</div>
+    <div class="retailer"> <%= tablet_offer.retailer %></div>
+    <div class="offer_button">
+     <!--  <a class="pure-button pure-button-primary" style="border-radius:5px;" href="">View</a> -->
+
+     <%= link_to 'view', tablet_offer.product_url, {:class=>"pure-button pure-button-primary border_rad"} %>
+    </div>
+  </div>
+</div>

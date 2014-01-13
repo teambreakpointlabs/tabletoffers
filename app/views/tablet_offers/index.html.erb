@@ -1,0 +1,46 @@
+<div class="wrapper">
+  <div style="display:inline-block;">
+    <div class="link_header_container">
+	    <div class="link_header"><%= nav_link "Best Tablet Offers", filter: 'best' %>  </div>
+	    <div class="link_header"><%= nav_link (params[:order] == "asc" ? "Highest Price" : "Lowest Price"), filter: 'price', order: (params[:order] == "asc" ? "desc" : "asc") %> </div>
+	   <!--  <div class="link_header large"> <%= nav_link 'Small Screens (< 30")', filter: 'small_screens' %> </div>
+	    <div class="link_header large"> <%= nav_link 'Large Screens (> 30")', filter: 'large_screens' %> </div> -->
+    </div>
+    <div class="content_holder">
+      <div id="offers">
+        <%= render :partial => @tablet_offers %>
+      </div>
+    
+      <%= link_to_next_page @tablet_offers, 'Load More', :remote => true, :id=>"load_more_link", :params => params %>	</div>
+
+      <div class="right_sidebar" style="width:320px;float:left;margin-top:25px;padding-top:20px;padding:10px;background:rgb(250, 250, 250); border-radius:10px;border:1px solid #efefef;height:500px;">
+      <div style="font-size:24px;font-family:'Open Sans';color: #2e2e2e;">
+ 	      <b>What is this?</b>
+      </div>
+      <div style="font-weight:400; font-size:18px;color: #232323;padding-top:20px;font-family: 'Open Sans'; letter-spacing:0.02em;line-height:24px;">
+ 	      <a style="color:#00b0ff;" href="http://www.tabletoffersuk.co.uk"> tabletoffersuk.co.uk</a> grabs all the <span style="color:#afafaf;">latest offers </span> from the <span style="color:#afafaf;">biggest retailers! </span>
+      </div>
+      <div style="font-weight:400; font-size:18px;color: #232323;padding-top:20px;font-family: 'Open Sans'; letter-spacing:0.02em;line-height:24px;">
+ 	    Sick of useless price comparison sites bringing back poor results? <span style="color:#afafaf;"> We only display current offers. </span>
+      All offers will have over 25% reduction. We only show you the biggest savings.
+      </div>
+      <div style="font-weight:400; font-size:18px;color: #232323;padding-top:20px;font-family: 'Open Sans'; letter-spacing:0.02em;line-height:24px;">
+      Only what you are looking for.<span style="color:#afafaf;">  No accessories. Or adverts.</span>
+    </div>
+    <div style="font-size:22px;font-family:'Open Sans';color: #2e2e2e;padding-top:20px;">
+ 	  <b>Our Other Sites</b>
+    </div>
+    <div style="font-weight:400; font-size:18px;color: #232323;padding-top:10px;font-family: 'Open Sans'; letter-spacing:0.02em;line-height:24px;">
+    <span><a style="color:#00b0ff;" href="http://www.specialoffershopper.co.uk"> www.specialoffershopper.co.uk </a></span>
+    </div>
+     <div style="font-weight:400; font-size:18px;color: #232323;padding-top:10px;font-family: 'Open Sans'; letter-spacing:0.02em;line-height:24px;">
+    <span><a style="color:#00b0ff;" href="http://www.televisionoffers.co.uk"> www.televisionoffers.co.uk </a></span>
+    </div>
+     <div style="font-weight:400; font-size:18px;color: #232323;padding-top:10px;font-family: 'Open Sans'; letter-spacing:0.02em;line-height:24px;">
+    <span><a style="color:#00b0ff;" href="http://www.televisionoffers.co.uk"> www.laptopoffersuk.co.uk </a></span>
+    </div>
+    <div style="height:40px;">
+    </div>
+    </div>
+  </div>
+</div>
