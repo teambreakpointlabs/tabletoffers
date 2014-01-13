@@ -78,3 +78,10 @@ test:
         # low amounts for fast failures.
         max_retries: 1
         retry_interval: 0
+production:
+  sessions:
+    default:
+      uri: mongodb://admin:password123@dharma.mongohq.com:10083/app21218650
+      options:
+        skip_version_check: true
+        safe: true
