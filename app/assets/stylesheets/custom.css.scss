@@ -150,7 +150,6 @@ nav{
 
 .offer_holder{
   width:225px;
-  height:500px;
   float:left;
   position:relative;
   text-align:center;
@@ -215,10 +214,12 @@ nav{
 
 .description{
   color: #666666;
+  border: 1px dashed #afafaf;
   margin-bottom:5px;
-  padding-left:12px;
-  padding-right:12px;
-  height: 60px;
+  margin-left:12px;
+  margin-right:12px;
+  padding:5px;
+  height: 55px;
   font-size: 14px;
   text-decoration:none;
 }
