@@ -10,5 +10,5 @@ include Mongoid::Document
   field :product_url, type: String
   field :screen_type, type: String
   field :screen_size, type: Float
-  field :desc, type: String
+  field :description, type: String
 end

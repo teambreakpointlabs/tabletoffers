@@ -1,11 +1,12 @@
 <div class="offer_holder">
   <div class="offer_tagline">
-    <%= tablet_offer.brand %> <%= tablet_offer.screen_size %>" <%= tablet_offer.screen_type %>
+    <%= tablet_offer.brand %> Tablet
   </div>
   <div class="offer_img_holder">
     <img src="<%= tablet_offer.img_url %>" class="offer_img"/>
   </div>
   <div class="offer_info">
+    <div class="description"><%= tablet_offer.description %> </div>
     <div class="original_price"><del> <span style="font-size:16px">Was</span> £<%= tablet_offer.original_price %></del></div>
     <div class="offer_price"> £<%= tablet_offer.offer_price %></div>
     <div class="pct_savings"> <%= tablet_offer.pct_savings %>% Off!</div>
