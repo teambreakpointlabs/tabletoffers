@@ -18,6 +18,7 @@ $off_black: #2e2e2e;
  background:#0078e7;
  opacity:0.8;
  text-decoration:none;
+ border-radius: 5px;
 }
 
 li{
@@ -210,7 +211,7 @@ nav{
 }
 
 .border_rad{
-  border-radius:5px;
+  border-radius:5px !important;
 }
 
 .description{
